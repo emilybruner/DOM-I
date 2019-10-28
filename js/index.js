@@ -39,7 +39,7 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('img-src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //navigation
 
@@ -115,7 +115,9 @@ nav.forEach(function (element) {
   element.style.color = "green";
 })
 
-let sampleButton = document.querySelector('.sampleButton');
-sampleButton.addEventListener('click', (event) => {
-  alert('You Clicked the Sample Button!')
+// stretch
+
+let stretchButton = document.querySelector('.cta button');
+stretchButton.addEventListener('click', (event) => {
+  document.querySelector('body').style.background = "pink"
 })
